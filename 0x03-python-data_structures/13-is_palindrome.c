@@ -1,14 +1,12 @@
 #include "lists.h"
 
-void *reverse_listint(listint_t **head);
-int is_palindrome(listint_t **head);
-
 /**
  * reverse_listint - Function to reverse a linked list
  * @head: pointer to starting of node of the list
  * Return: pointer to the head of reverse
  */
-void *reverse_listint(listint_t **head)
+
+void reverse_listint(listint_t **head)
 {
 	listint_t *prev = NULL;
 	listint_t *node = *head;
