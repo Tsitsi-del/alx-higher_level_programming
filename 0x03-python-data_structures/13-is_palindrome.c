@@ -31,21 +31,22 @@ void reverse_listint(listint_t **head)
 
 int is_palindrome(listint_t **head)
 {
-        listint_t *sl = *head, *fs = *head, *tm = *head, *duplicate = NULL;
+	listint_t *sl = *head, *fs = *head, *tm = *head, *duplicate = NULL;
 
-        if (*head == NULL || (*head)->next == NULL)
-        {
-                return (1) }
-        while (1)
-        {
-                fs = fs->next->next;
-                if (!fs)
-                {
-                        duplicate = sl->next;
-                        break; }
-                if (!fs->next)
-                {
-                        duplicate = sl->next->next;
+	if (*head == NULL || (*head)->next == NULL)
+	{
+		return (1); }
+
+	while (1)
+	{
+		fs = fs->next->next;
+		if (!fs)
+		{
+			duplicate = sl->next;
+			break; }
+		if (!fs->next)
+		{
+			duplicate = sl->next->next;
 			break; }
 		sl = sl->next; }
 	reverse_listint(&duplicate);
