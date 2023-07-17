@@ -1,5 +1,4 @@
-#!usr/bin/python3
-# 0-print_list_integer.py
+#!/usr/bin/python3
 
 def print_list_integer(my_list=[]):
     """Function printing integers in list"""
