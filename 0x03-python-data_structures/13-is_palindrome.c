@@ -1,17 +1,18 @@
 #include "lists.h"
 
-listint_t *reverse(listint_t **head);
+void *reverse_listint(listint_t **head);
 int is_palindrome(listint_t **head);
 
 /**
- * reverse - Function to reverse a linked list
+ * reverse_listint - Function to reverse a linked list
  * @head: pointer to starting of node of the list
- * Return: pointer to the head of reversed list
+ * Return: pointer to the head of reverse
  */
-
-listint_t *reverse(listint_t **head)
+void *reverse_listint(listint_t **head)
 {
-	listint_t *node = *head, *prev, *next = NULL;
+	listint_t *prev = NULL;
+	listint_t *node = *head;
+	listint_t *next = NULL;
 
 	while (node)
 	{
@@ -21,7 +22,6 @@ listint_t *reverse(listint_t **head)
 		node = next;
 	}
 	*head = prev;
-	return (*head);
 }
 
 /**
@@ -33,36 +33,36 @@ listint_t *reverse(listint_t **head)
 
 int is_palindrome(listint_t **head)
 {
-	listint_t *tm, revs, *middle;
-	size_t len = 0;
-	size_t x;
+        listint_t *sl = *head, *fs = *head, *tm = *head, *duplicate = NULL;
 
-	if (*head == NULL || (*head)->next == NULL)
-		return (1);
-	tm = *head;
-	while (tm)
-	{
-		len++;
-		tm = tm->next;
-	}
-	tm = *head;
-	for (x = 0; x < (len / 2) - 1; x++)
-		tm = tm->next;
-	if ((len % 2) == 0 && tm->next != tm->next->next)
-		return (0);
-	tm = tm->next->next;
-	revs = reverse(&tm);
-	middle = revs;
-	tm = *head;
+        if (*head == NULL || (*head)->next == NULL)
+        {
+                return (1) }
+        while (1)
+        {
+                fs = fs->next->next;
+                if (!fs)
+                {
+                        duplicate = sl->next;
+                        break; }
+                if (!fs->next)
+                {
+                        duplicate = sl->next->next;
+			break; }
+		sl = sl->next; }
+	reverse_listint(&duplicate);
 
-	while (revs)
+	while (duplicate && tm)
 	{
-		if (tm->next != rev->next)
+		if (tm->n == duplicate->n)
+		{
+			duplicate = duplicate->next;
+			tm = tm->next; }
+		else
 			return (0);
-		tm = tm->next;
-		revs = revs->next;
 	}
-	reverse(&middle);
-
-	return (1);
+	if (!duplicate)
+	{
+		return (1); }
+	return (0);
 }
