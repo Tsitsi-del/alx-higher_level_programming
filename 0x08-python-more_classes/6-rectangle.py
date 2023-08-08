@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+"""
 
-"""Define class Rectangle"""
-
+Define class Rectangle
+"""
 
 
 class Rectangle:
+    """Rectangle"""
+
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
