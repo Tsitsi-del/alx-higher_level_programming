@@ -9,8 +9,8 @@ class Rectangle:
     """Rectangle class"""
     def __init__(self, width=0, height=0):
         """Initialize width and height"""
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -33,10 +33,10 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """set height"""
+        """height setter"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        if height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
