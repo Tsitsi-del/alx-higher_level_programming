@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-
 """
+
 Define class Rectangle
 """
 
 
 class Rectangle:
+    """Rectangle class"""
     def __init__(self, width=0, height=0):
         """Initialize width and height"""
         self.width = width
@@ -48,4 +49,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width * self.__height)
-    
