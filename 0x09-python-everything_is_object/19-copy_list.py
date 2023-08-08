@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-"""Copy function"""
-
-def copy_list(l):
-    return l[:]
+def copy_list(x):
+    return x[:]
