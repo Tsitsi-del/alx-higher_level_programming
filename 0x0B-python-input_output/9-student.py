@@ -25,7 +25,6 @@ class Student:
 
         def to_json(self):
             """
-            disctionary of student insatnce
+            dictionary of student insatnce
             """
-            stduent_dict = self.__dict__
-            return student_dict
+            return self.__dict__
