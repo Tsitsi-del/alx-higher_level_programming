@@ -7,7 +7,6 @@ Class Student
 
 class Student:
     """Class Student"""
-
     def __init__(self, first_name, last_name, age):
         """Initialize Student instance"""
         self.first_name = first_ name
