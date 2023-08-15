@@ -6,18 +6,11 @@ Class Student
 
 class Student:
     """
-    class Student
-    Attributes:
-        first_name (str): student name
-        last_name (str): last name of student
-        age (int): student age
-    Methods:
-        __init__ - initialize student instance
-        to_json - dictionary of student instance
-        """
+        Class Student
+    """
         def __init__(self, first_name, last_name, age):
             """
-            student instance
+                Student instance
             """
             self.first_name = first_ name
             self.last_name = last_name
@@ -25,6 +18,6 @@ class Student:
 
         def to_json(self):
             """
-            dictionary of student insatnce
+                Dictionary of student insatnce
             """
             return self.__dict__
