@@ -17,6 +17,6 @@ def pascal_triangle(n):
             p_rw = tri[-1]
             for k in range(len(p_rw) - 1):
                 rw.append(p_rw[k] + p_rw[k + 1])
-                rw.append(1)
+            rw.append(1)
         tri.append(rw)
     return tri
