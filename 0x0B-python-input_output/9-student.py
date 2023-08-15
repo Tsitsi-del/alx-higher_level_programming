@@ -1,15 +1,11 @@
 #!/usr/bin/python3
 """
-Class Student
+    Class Student
 """
 
 
 class Student:
     """
-    Class Student
-    """
-    def __init__(self, first_name, last_name, age):
-        """
         Class Student
         Attributes:
             first_name (str): student name
@@ -19,6 +15,7 @@ class Student:
             __init__ - initialize student instance
             to_json - dictionary of student instance
         """
+    def __init__(self, first_name, last_name, age):
         self.first_name = first_ name
         self.last_name = last_name
         self.age = age
