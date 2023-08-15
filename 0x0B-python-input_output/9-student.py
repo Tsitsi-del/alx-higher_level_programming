@@ -14,7 +14,7 @@ class Student:
         Methods:
             __init__ - initialize student instance
             to_json - dictionary of student instance
-        """
+    """
     def __init__(self, first_name, last_name, age):
         self.first_name = first_ name
         self.last_name = last_name
