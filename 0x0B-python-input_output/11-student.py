@@ -20,7 +20,6 @@ class Student:
         """
         retrieves a dictionary representation of Student instance
         """
-
         if type(attrs) is list and all([type(i) == str for i in attrs]):
             return {j: x for j, x in self.__dict__.items() if j in attrs}
         else:
@@ -30,5 +29,5 @@ class Student:
         """
         loads attributes from json
         """
-        for key, value in json.tems():
+        for key, value in json.items():
             self.__dict__[key] = value
