@@ -49,7 +49,7 @@ class Base:
         lis_dict = cls.to_json_string(dict_list)
 
         with open(filename, "w") as file_name:
-            file_name(lis_dict)
+            file_name.write(lis_dict)
 
     @staticmethod
     def from_json_string(json_string):
