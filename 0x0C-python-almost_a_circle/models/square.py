@@ -4,7 +4,7 @@ Class Square
 """
 
 
-from inspectimport classify_class_attrs
+from inspect import classify_class_attrs
 from models.rectangle import Rectangle
 
 
@@ -51,7 +51,7 @@ class Square(Rectangle):
         if args is not None and len(args) is not 0:
             attr_list = ["id", "size", "x", "y"]
             for x in range(len(args)):
-                if attr_list[x] = "size":
+                if attr_list[x] == "size":
                     setattr(self, "width", args[x])
                     setattr(self, "height", args[x])
                 else:
