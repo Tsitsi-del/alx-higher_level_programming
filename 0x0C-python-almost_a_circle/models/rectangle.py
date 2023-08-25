@@ -98,7 +98,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Args and kwargs"""
-        if args in not None and len(args) is not 0:
+        if args is not None and len(args) is not 0:
             attr_list = ["id", "width", "height", "x", "y"]
             for x in range(len(args)):
                 setattr(self, attr_list[x], args[x])
@@ -114,4 +114,4 @@ class Rectangle(Base):
         dict["height"] = self.height
         dict["x"] = self.x
         dict["y"] = self.y
-        return (dict)
+        return dict
