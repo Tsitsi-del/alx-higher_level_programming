@@ -61,4 +61,3 @@ class TestBaseMehtods(unittest.TestCase):
         bs1 = Base()
         bs2 = Base()
         self.assertEqual(bs1.id + 1, bs2.id)
-

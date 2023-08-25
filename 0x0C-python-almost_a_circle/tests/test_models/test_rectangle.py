@@ -41,7 +41,7 @@ class TestRectangleMethods(unittest.TestCase):
         Rectangle class type
         """
         self.assertEqual(str(Rectangle),
-                "<class 'models.rectangle.Rectangle'>")
+                         "<class 'models.rectangle.Rectangle'>")
 
     def test_inheritance(self):
         """
@@ -58,7 +58,7 @@ class TestRectangleMethods(unittest.TestCase):
         r3 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(r1.id, 1)
         self.assertEqual(r2.id, 2)
-        self.assertEqual(r3.id,12)
+        self.assertEqual(r3.id, 12)
 
     def test_passed_args(self):
         """
@@ -82,12 +82,12 @@ class TestRectangleMethods(unittest.TestCase):
             Rectangle('s', 8)
             Rectangle(True, 7)
 
-           with self.assertRaiseRegex(TypeError, "x must be an integer"):
+        with self.assertRaiseRegex(TypeError, "x must be an integer"):
             Rectangle(5, 4, "NK")
             Rectangle(5, 4, 'n')
             Rectangle(True, 7, 3)
 
-           with self.assertRaiseRegex(TypeError, "y must be an integer"):
+        with self.assertRaiseRegex(TypeError, "y must be an integer"):
             Rectangle(5, 4, 7, "NK")
             Rectangle(5, 4, 3, 'n')
             Rectangle(True, 7, 3, 2)
