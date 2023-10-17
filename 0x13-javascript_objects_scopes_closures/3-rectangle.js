@@ -1,6 +1,6 @@
 #!/usr/bin/node
-/*
- * Rectangle class and checking parameters
+/**
+ * Rectangle class and check the parameters provided
  */
 class Rectangle {
   constructor (w, h) {
@@ -9,17 +9,18 @@ class Rectangle {
       this.height = h;
     }
   }
-  
+
   print () {
-    for (let x = 0 < this.height; x++) {
+    for (let a = 0; a < this.height; a++) {
       let myVar = '';
       let b = 0;
       while (b < this.width) {
         myVar += 'X';
-	b++
+        b++;
       }
+
       console.log(myVar);
     }
   }
-}	
+}
 module.exports = Rectangle;
