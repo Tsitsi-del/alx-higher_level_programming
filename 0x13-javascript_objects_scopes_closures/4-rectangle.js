@@ -22,6 +22,7 @@ class Rectangle {
       console.log(myVar);
     }
   }
+
   rotate () {
     let t = 0;
     t = this.width;
