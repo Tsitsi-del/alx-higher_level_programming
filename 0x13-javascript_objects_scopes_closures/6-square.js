@@ -8,7 +8,7 @@ class Square extends PrevSquare {
   charPrint (c) {
     const myCh = c === undefined ? 'X' : c;
     for (let x = 0; x < this.height; x++) {
-      let my Var = '';
+      let myVar = '';
       let y = 0;
       while (y < this.width) {
         myVar += myCh;
