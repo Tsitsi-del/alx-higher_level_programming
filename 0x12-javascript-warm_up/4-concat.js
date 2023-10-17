@@ -1,6 +1,5 @@
 #!/usr/bin/node
+const zeroArgv = process.argv[2];
+const firstArgv = process.argv[3];
 
-const zero_argv = process.argv[2];
-const first_argv = process.argv[3];
-
-console.log(`${zero_argv} is ${first_argv}`);
+console.log(`${zeroArgv} is ${firstArgv}`);
