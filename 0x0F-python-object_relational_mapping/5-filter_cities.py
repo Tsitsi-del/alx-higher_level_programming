@@ -12,7 +12,7 @@ if __name__ == "__main__":
                  ON states.id=cities.state_id WHERE states.name=%s""",
                  (sys.argv[4],))
     rows = curs.fetchall()
-    tem = list(row[0] for r in rows)
+    tem = list(row[0] for row in rows)
     print(*tem, sep=", ")
     curs.close()
     db.close()
