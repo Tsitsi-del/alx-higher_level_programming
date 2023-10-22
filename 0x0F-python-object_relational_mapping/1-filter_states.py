@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" all states from the database filter with N """
+""" all states from the database filter with N"""
 import MySQLdb
 import sys
 
