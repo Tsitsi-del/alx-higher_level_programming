@@ -2,8 +2,7 @@
 """ Uses GitHub API to dsiplay Id based on given credentials"""
 import requests
 import sys
-import requests.auth
-import HTTPBasicAuth
+from  requests.auth import HTTPBasicAuth
 
 
 if __name__ == "__main__":
