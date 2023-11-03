@@ -13,7 +13,7 @@ if __name__ == "__main__":
     try:
         for x in range(10):
             print("{}: {}".format(
-                commits[i].get("sha"),
-                commits[i].get("commit").get("author").get("name")))
+                commits[x].get("sha"),
+                commits[x].get("commit").get("author").get("name")))
     except IndexError:
         pass
